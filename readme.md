@@ -1,7 +1,7 @@
 
 # Distortion Glitch Effect & IMG Slider  | Hover effect V2
 
-I made a few changes to apply the Script published by Robin Dela to the project. I am sharing the codes because Array images and gsap 3.0 are mentioned a lot in Issues.
+I made a few changes to apply the Script published by Robin Dela to the project. I am sharing the codes because Array images and gsap 3.0 are mentioned a lot in issues.
 
 
 [**Original Repo By Robin Dela:**](https://tympanus.net/Development/DistortionHoverEffect/)
