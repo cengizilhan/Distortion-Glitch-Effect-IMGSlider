@@ -1,0 +1,166 @@
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+
+
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+.message {
+	position: relative;
+	z-index: 100;
+	display: none;
+	padding: 1em;
+	text-align: center;
+	color: var(--color-bg);
+	background: var(--color-text);
+}
+
+
+
+.hover-container main {
+	position: relative;
+	margin: 0 auto;
+	width: fit-content;
+	height:100%;
+
+
+
+}
+.hover-container,
+.hover-container main,
+.hover-container canvas {
+	aspect-ratio: 680/440;
+	max-width: 440px;
+	object-fit: cover;
+}
+
+
+.content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	
+}
+
+/* Header */
+.codrops-header {
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 0 0 2rem 0;
+}
+
+.codrops-header__title {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.info {
+	margin: 0 0 0 1.25em;
+	color: var(--color-info);
+}
+
+.github {
+	display: block;
+	margin: 0 0 0 auto;
+}
+
+
+
+.grid__cont {
+	height:100%;
+}
+.grid__item {
+	position: relative;
+	display: flex;
+	align-items: stretch;
+	
+	min-width: 100px !important;
+}
+
+.grid__item--bg {
+
+	min-height: 100px !important;
+	height: 100%;
+	
+}
+
+.grid__item-content {
+	width: 100%;
+	padding: 8vw;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	pointer-events: none;
+	background: var(--item-bg);
+}
+
+.grid__item--bg .grid__item-content {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.grid__item-img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.grid__item-img canvas {
+	height: 100%;
+}
+
+.grid__item-img img {
+	height: 100%;
+	display: block;
+}
+
+.grid__item-img img:nth-child(2) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.grid__item:hover .grid__item-img img:nth-child(2) {
+	opacity: 1;
+}
+
+.js .grid__item-img img {
+	display: none;
+}
+
+.button__cont {
+	display:flex;
+	justify-content: center;
+	padding:1rem;
+}
+.button__cont button {
+	margin: 0 1rem;
+}
+.hover-container {
+	margin:0 auto;
+}

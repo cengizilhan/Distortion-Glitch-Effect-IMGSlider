@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Distortion Hover Effect | Codrops</title>
+		<meta name="description" content="A little library that can be used for creating WebGL powered distortion hover effects using displacement images." />
+		<meta name="keywords" content="webgl, hover, effect, distortion, displacement, web development, three.js" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		
+		<div class="container hover-container" >
+			<main >
+				
+				<div class="grid__cont" >
+				
+				
+					<div class="grid__item grid__item--bg ">
+						<div class="grid__item-img" 
+						data-displacement="img/displacement/4.png" 
+						id="img-holder" data-hover="false"  data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6"
+										
+						data-imgArr='["./portf-1.jpg","./portf-2.jpg","./portf-3.jpg","./portf-4.jpg","./portf-5.jpg","./portf-6.jpg","./portf-7.jpg","./portf-8.jpg"]'>
+						
+							<img src="./portf-1.jpg" alt="Image"/>
+							<img src="./portf-2.jpg" alt="Image"/>
+						</div>
+					
+					</div>
+				
+		
+			
+				</div>
+						
+			<div class="button__cont">
+				
+				<button class="singleProduct__prev">prev</button>
+				<button class="singleProduct__next">next</button>
+			</div>
+			</main></div>
+
+			
+
+		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+<script src='https://codepen.io/GreenSock/pen/ZEGdQLM/7ba936b34824fefdccfe2c6d9f0b740b.js'></script><script  src="./script.js"></script>
+
+
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/three.min.js"></script>
+		
+		<script src="../dist/hover-effect.umd.js"></script>
+		<script>
+			imagesLoaded( document.querySelectorAll('img'), () => {
+				document.body.classList.remove('loading');
+			});
+
+			Array.from(document.querySelectorAll('.grid__item-img')).forEach((el) => {
+				let nextBtn = document.querySelector(".singleProduct__next");
+				let prevBtn = document.querySelector(".singleProduct__prev");
+				const imgs = Array.from(el.querySelectorAll('img'));
+				let hoverr=new hoverEffect({
+					parent: el,
+					intensity: el.dataset.intensity || undefined,
+					speedIn: el.dataset.speedin || undefined,
+					speedOut: el.dataset.speedout || undefined,
+					easing: el.dataset.easing || undefined,
+					//hover: el.dataset.hover || undefined,
+					hover: false || undefined,
+					image1: imgs[0].getAttribute('src'),
+					image2: imgs[1].getAttribute('src'),
+					displacementImage: el.dataset.displacement,
+				
+				});
+				
+				nextBtn.addEventListener("click", () => {
+  hoverr.next();
+});
+
+	prevBtn.addEventListener("click", () => {
+  	hoverr.previous();
+	});
+			});
+
+		
+		</script>
+
+
+	</body>
+</html>
