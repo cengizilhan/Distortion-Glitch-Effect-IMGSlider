@@ -10,7 +10,8 @@ I made a few changes to apply the Script published by Robin Dela's project. I am
 <p align="center">
     <img alt="example 1" src="gifs/1.gif" width="256">
    </p>
-## Live View 
+ 
+## Live View
 
 [**Live View:**](https://sawacrow.github.io/Distortion-Glitch-Effect-IMGSlider/example/index.html)
 
