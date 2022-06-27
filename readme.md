@@ -30,7 +30,7 @@ demo: example/index.html
 2) You can change the images on data- imgArr attribute.
 
 
-Thanks to Ramazan Atalay!
+Thanks to Ramazan ' @rmznatly ' Atalay!
 
 IMGS from pexels:
 pexels-sulav-loktam-5184645,
