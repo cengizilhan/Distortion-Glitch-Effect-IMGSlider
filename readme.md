@@ -10,6 +10,9 @@ I made a few changes to apply the Script published by Robin Dela to the project.
 <p align="center">
     <img alt="example 1" src="gifs/1.gif" width="256">
    </p>
+##Live View 
+
+[**Live:**](https://sawacrow.github.io/Distortion-Glitch-Effect-IMGSlider/example/index.html)
 
 
 What's News?
