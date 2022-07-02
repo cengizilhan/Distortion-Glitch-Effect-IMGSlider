@@ -1,5 +1,5 @@
 
-# Distortion Glitch Effect & IMG Slider  | Hover effect V2
+# Distortion Glitch Effect & Image Slider  | Hover effect V2
 
 I made a few changes to apply the Script published by Robin Dela's project.
 
